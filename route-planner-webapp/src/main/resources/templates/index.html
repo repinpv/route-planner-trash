@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<span th:text="${beanCount}">Count</span>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="name : ${beanNames}">
+        <td><span th:text="${name}">Name</span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
